@@ -19,4 +19,11 @@ some memo. for bootstrap
 - 而其中「crossorigin="anonymous"」這一段是安全性的措施，因為我們的css跨網域存取，因此存取時可能被要求cookie, session的資訊，用anonymous是比較安全的方式
 - 當然不加入integrity, crossorigin這二個項目網頁也是會正常的，只看你認為有沒有必要。
 
-  
+
+----
+
+## 目前已可以利用BS4的樣版把一個簡單的介紹網頁製作出來，也可以利用樣版和後台交換資料，把歷史資料呈現出來
+下一步就是[「登入」]((login.md))! 
+
+- 場景一：我有一個首頁顯示一個sample IoT Site的資訊，但其它進一步的Site information就要登入才能看的見
+- 場景二：更甚，我想要每一個使用者登入後只看的到自己管理的IoT site的資訊，完成使用者權限的功能
