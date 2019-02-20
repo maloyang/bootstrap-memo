@@ -5,6 +5,8 @@
 
 - [參考說明](https://zh.wikipedia.org/wiki/HTTP%E5%9F%BA%E6%9C%AC%E8%AE%A4%E8%AF%81)
 - 當沒有通過這一個認證時，會回傳一個「HTTP 401 錯誤 - 未授權 (Unauthorized)」的錯誤
+- 使用時要了解[decorator](https://realpython.com/primer-on-python-decorators/#simple-decorators)
+- [參考文章2](https://medium.com/origino/user-authentication-2d7d8d08e108)
 
 
 ## session
@@ -17,3 +19,5 @@
   - session的實現法：(1)cookie -> 現在的網站框架中，預設多採用cookie ; (2)直接把session輸出到網頁中
   - 所以 cookie-base-session被視為一解決方案：把資料暫存在cookie，讓client自己保存 --> 即把你的餐點全寫在號碼牌上
   - cookie有被竄改的風險，所以一般會加密，只有server才知道怎麼解 (當然，也有可能被破)
+
+
