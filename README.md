@@ -1,5 +1,8 @@
 # bootstrap-memo
-some memo. for bootstrap
+some memo. for bootstrap / 記錄一些學習web技術的資訊
+
+## 參考文章：
+- [這裡有一個IT鐵人的系列文章，是說明Flask的](https://ithelp.ithome.com.tw/articles/10199518)
 
 ## 觀看教學1 <bootstrap4 教學01> [link](https://www.youtube.com/watch?v=xwFLdiFfXmI)
 
