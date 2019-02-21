@@ -8,6 +8,10 @@
 - 使用時要了解[decorator](https://realpython.com/primer-on-python-decorators/#simple-decorators)
 - [參考文章2](https://medium.com/origino/user-authentication-2d7d8d08e108)
 
+### 剛在Flask的extension突然發現了[Flask-Basic-Auth](https://flask-basicauth.readthedocs.io/en/latest/)
+這個讓你使用Basic-Auth可以少寫很多code啊!! 真棒
+
+
 
 ## session
 - [參考文章1](http://fred-zone.blogspot.com/2014/01/web-session.html)
