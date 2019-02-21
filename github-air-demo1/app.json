@@ -1,0 +1,12 @@
+{
+    "name": "flask bs4 demo",
+    "description": "web to show air info.",
+    "repository": "https://github.com/maloyang/bootstrap-memo/air-demo1",
+    "env": {
+    },
+    "addons": [
+        {
+            "plan": "mongolab:sandbox"
+        }        
+    ]
+}
