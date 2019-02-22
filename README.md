@@ -3,6 +3,7 @@ some memo. for bootstrap / 記錄一些學習web技術的資訊
 
 ## 參考文章：
 - [這裡有一個IT鐵人的系列文章，是說明Flask的](https://ithelp.ithome.com.tw/articles/10199518)
+- [教學文](https://www.ctolib.com/docs/sfile/head-first-flask/index.html)
 
 ## icon資料：
 - [fontawesome](https://pjchender.blogspot.com/2017/12/5-fontawesome-5.html)
