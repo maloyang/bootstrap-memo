@@ -11,6 +11,34 @@
 ### 剛在Flask的extension突然發現了[Flask-Basic-Auth](https://flask-basicauth.readthedocs.io/en/latest/)
 這個讓你使用Basic-Auth可以少寫很多code啊!! 真棒
 
+- pip install Flask-BasicAuth 安裝
+- 只要使用如下的方式就可以有登入功能
+```
+from flask import Flask
+from flask_httpauth import HTTPBasicAuth
+
+app = Flask(__name__)
+auth = HTTPBasicAuth()
+
+users = {
+    "john": "hello",
+    "susan": "bye"
+}
+
+@auth.get_password
+def get_pw(username):
+    if username in users:
+        return users.get(username)
+    return None
+
+@app.route('/')
+@auth.login_required
+def index():
+    return "Hello, %s!" % auth.username()
+
+if __name__ == '__main__':
+    app.run()
+```
 
 
 ## session
