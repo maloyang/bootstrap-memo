@@ -1,4 +1,4 @@
-# 使用 basic-auth，但需要出個帳號時
+# 使用 basic-auth，但需要多個帳號時
 
 ## 我們假設user_list是由DB取出來的
 ```
@@ -23,3 +23,7 @@ def check_auth(username, password):
         return user_list[username]==password
     return False
 ```
+
+## 判斷是哪一個帳號
+
+在用戶訪問一個連結時，可以使用request.authorization.username來確認是誰
