@@ -11,32 +11,7 @@
 ### 剛在Flask的extension突然發現了[Flask-Basic-Auth](https://flask-basicauth.readthedocs.io/en/latest/)
 這個讓你使用Basic-Auth可以少寫很多code啊!! 真棒
 
-- 使用前先安裝：`pip install Flask-BasicAuth`
-- 只要使用如下的方式就可以有登入功能
-```
-from flask import Flask, render_template
-from flask_basicauth import BasicAuth
-
-app = Flask(__name__)
-
-app.config['BASIC_AUTH_USERNAME'] = 'admin'
-app.config['BASIC_AUTH_PASSWORD'] = '12345'
-
-basic_auth = BasicAuth(app)
-
-@app.route('/')
-def index():
-    return 'ok'
-
-@app.route('/secret')
-@basic_auth.required
-def secret_view():
-    return 'Hi~ you login!'
-
-if __name__ == "__main__":
-    app.run(debug=True)
-```
-
+### 另一個flask extension: [Flask-httpauth](https://flask-httpauth.readthedocs.io/en/latest/)
 
 ## session
 - [參考文章1](http://fred-zone.blogspot.com/2014/01/web-session.html)
@@ -48,5 +23,4 @@ if __name__ == "__main__":
   - session的實現法：(1)cookie -> 現在的網站框架中，預設多採用cookie ; (2)直接把session輸出到網頁中
   - 所以 cookie-base-session被視為一解決方案：把資料暫存在cookie，讓client自己保存 --> 即把你的餐點全寫在號碼牌上
   - cookie有被竄改的風險，所以一般會加密，只有server才知道怎麼解 (當然，也有可能被破)
-
 
